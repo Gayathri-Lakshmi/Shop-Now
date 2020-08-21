@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SIgnUp.CustomerUp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:counterEnabled="true"
+                app:counterMaxLength="30"
+                android:textColorHint="#D3503088"
+                android:textColor="#D3503088"
+                app:helperText="Length of Username should not be more than 30 "
+
+                app:startIconDrawable="@drawable/ic_baseline_account_circle_24">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/cust_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColorHint="#D3503088"
+                    android:textColor="#D3503088"
+                    android:hint="Enter Username">
+
+
+                </com.google.android.material.textfield.TextInputEditText>
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#D3503088"
+                android:textColor="#D3503088"
+                android:layout_marginTop="10dp"
+                app:helperText="Enter the 10 digit phone no."
+                app:startIconDrawable="@drawable/ic_baseline_contact_phone_24">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/cust_phone"
+                    android:layout_width="match_parent"
+                    android:textColorHint="#D3503088"
+                    android:textColor="#D3503088"
+                    android:layout_height="match_parent"
+                    android:inputType="phone"
+                    android:hint="Enter Phone No.">
+
+
+                </com.google.android.material.textfield.TextInputEditText>
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:textColorHint="#D3503088"
+                android:textColor="#D3503088"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColorHint="#D3503088"
+                    android:textColor="#D3503088"
+                    android:src="@drawable/ic_baseline_location_on_24">
+
+                </ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="serif"
+                    android:textColorHint="#D3503088"
+                    android:textColor="#A9503088"
+
+                    android:text="Loctaion"
+                    android:textSize="25sp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayout8"
+                android:layout_width="match_parent"
+                android:textColorHint="#D3503088"
+                android:textColor="#D3503088"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:editable="false"
+                    android:textColorHint="#D3503088"
+                    android:textColor="#D3503088"
+                    android:hint="Country"
+                    android:text="India">
+
+                </com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayout4"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:textColorHint="#D3503088"
+                android:textColor="#D3503088"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Address Line"
+                    android:textColorHint="#D3503088"
+                    android:textColor="#D3503088"
+                    android:id="@+id/cust_add"
+                    android:inputType="textPostalAddress">
+
+                </com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayout6"
+                android:textColorHint="#D3503088"
+                android:textColor="#D3503088"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="#D3503088"
+                    android:textColor="#D3503088"
+                    android:hint="City or District"
+                    android:id="@+id/cust_dist">
+
+                </com.google.android.material.textfield.TextInputEditText>
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:textColorHint="#D3503088"
+                android:textColor="#D3503088"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="State"
+                    android:textColorHint="#D3503088"
+                    android:textColor="#D3503088"
+                    android:id="@+id/cust_state">
+
+                </com.google.android.material.textfield.TextInputEditText>
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:textColorHint="#D3503088"
+                android:textColor="#D3503088"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Pin Code"
+                    android:textColorHint="#D3503088"
+                    android:textColor="#D3503088"
+                    android:inputType="number"
+                    android:id="@+id/cust_pin">
+
+                </com.google.android.material.textfield.TextInputEditText>
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="join"
+                android:backgroundTint="#81673AB7"
+                android:text="Join"
+                android:layout_marginStart="145dp"
+                android:layout_marginTop="25dp">
+
+            </Button>
+
+        </LinearLayout>
+
+    </ScrollView>
+    </LinearLayout>

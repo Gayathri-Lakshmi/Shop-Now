@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/cartLayout"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddToCart">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Item Name"
+        android:textColorHint="#D3503088"
+        android:textColor="#D3503088"
+        android:textSize="25dp"
+        android:id="@+id/cItemName"
+        android:layout_marginTop="20dp">
+
+    </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Item Price"
+        android:id="@+id/cItemPrice"
+        android:layout_marginTop="20dp"
+        android:textColorHint="#D3503088"
+        android:textColor="#D3503088"
+        android:textSize="25dp"
+        >
+
+    </TextView>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cQty"
+            android:textSize="15dp"
+            android:textColorHint="#D3503088"
+            android:textColor="#D3503088"
+            android:inputType="numberDecimal"
+            android:hint="Enter the qunatity">
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ok"
+        android:backgroundTint="#81673AB7"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="150dp"
+        android:onClick="calculate">
+
+    </Button>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:hint="Total Price"
+        android:textColorHint="#9C27B0"
+        android:textColor="#9C27B0"
+        android:textSize="20dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/cTotal"
+        android:enabled="false"
+        android:layout_margin="20dp">
+
+    </EditText>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:textSize="15dp"
+            android:backgroundTint="#81673AB7"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="50dp"
+            android:onClick="cancel">
+
+        </Button>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add to cart"
+            android:textSize="15dp"
+            android:backgroundTint="#81673AB7"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="70dp"
+            android:onClick="addToCart">
+
+        </Button>
+    </LinearLayout>
+
+
+</LinearLayout>

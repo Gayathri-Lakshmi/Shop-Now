@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item  android:id="@+id/option_orders"
+        android:title="Orders"
+        app:showAsAction="ifRoom"
+        />
+
+    <item  android:id="@+id/option_packed"
+        android:title="Order Packed"
+        app:showAsAction="ifRoom"
+        />
+
+    <item  android:id="@+id/option_done"
+        android:title="Customer Received"
+        app:showAsAction="ifRoom"
+        />
+
+</menu>

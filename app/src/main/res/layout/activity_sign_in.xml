@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/signInLayout"
+    android:orientation="vertical"
+    tools:context=".SignIn">
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:textColorHint="#D3503088"
+        android:textColor="#D59C27B0"
+        app:helperText="Enter the 10 digit phone no."
+        app:startIconDrawable="@drawable/ic_baseline_contact_phone_24">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/sign_phone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColorHint="#D3503088"
+            android:textColor="#D59C27B0"
+            android:inputType="phone"
+            android:hint="Enter Phone No.">
+
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:textColor="#9C27B0"
+        android:text="Please make a choice">
+
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:id="@+id/radio">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="10dp"
+                android:textColorHint="#D3503088"
+                android:textColor="#D59C27B0"
+                android:id="@+id/Scust"
+                android:text="Customer">
+
+            </RadioButton>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="10dp"
+                android:textColorHint="#D3503088"
+                android:textColor="#D59C27B0"
+                android:id="@+id/Ssk"
+                android:text="Shopkeeper">
+
+            </RadioButton>
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LogIn"
+        android:backgroundTint="#81673AB7"
+        android:onClick="logIn"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="145dp">
+
+    </Button>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="forgot password?"
+        android:onClick="forgot"
+        android:textSize="15sp"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="140dp"
+        android:textColor="#03A9F4">
+
+    </TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" or Sign Up"
+        android:onClick="SsignUp"
+        android:textSize="15sp"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="160dp"
+        android:textColor="#03A9F4">
+
+    </TextView>
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="170dp"
+        android:id="@+id/sProgress"
+        android:visibility="gone"
+        android:layout_marginTop="10dp">
+
+    </ProgressBar>
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>

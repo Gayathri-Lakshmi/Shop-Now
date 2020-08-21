@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".SIgnUp.ShopkeeperUp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:counterEnabled="true"
+                android:textColorHint="#D3503088"
+                android:textColor="#D3503088"
+                app:counterMaxLength="30"
+                app:helperText="Length of Username should not be more than 30 "
+                app:startIconDrawable="@drawable/ic_baseline_account_circle_24"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/sk_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Enter Username"
+                    android:textColorHint="#D3503088"
+                    android:textColor="#D3503088"
+                    tools:layout_editor_absoluteX="16dp"
+                    tools:layout_editor_absoluteY="670dp">
+
+                </com.google.android.material.textfield.TextInputEditText>
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:counterEnabled="true"
+                app:counterMaxLength="30"
+                android:layout_marginTop="10dp"
+                android:textColorHint="#D3503088"
+                android:textColor="#D3503088"
+                app:helperText="Length of Shop Name should not be more than 30 "
+                app:startIconDrawable="@drawable/ic_baseline_store_mall_directory_24">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/shop_name"
+                    android:textColorHint="#D3503088"
+                    android:textColor="#D3503088"
+                    android:hint="Enter Shop Name">
+
+                </com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayout5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:helperText="Enter the 10 digit phone no."
+                app:errorEnabled="true"
+                android:textColorHint="#D3503088"
+                android:textColor="#D3503088"
+                app:startIconDrawable="@drawable/ic_baseline_contact_phone_24">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/sk_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Phone No."
+                    android:textColorHint="#D3503088"
+                    android:textColor="#D3503088"
+                    android:inputType="phone">
+
+                </com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#D3503088"
+                android:textColor="#D3503088"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColorHint="#D3503088"
+                    android:textColor="#D3503088"
+                    android:src="@drawable/ic_baseline_location_on_24">
+
+                </ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif"
+                    android:text="Loctaion"
+                    android:textSize="25sp"
+                    android:textColorHint="#D3503088"
+                    android:textColor="#C1503088"
+                    android:textStyle="bold">
+
+                </TextView>
+
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayout8"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:textColorHint="#D3503088"
+                android:textColor="#D3503088"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:editable="false"
+                    android:hint="Country"
+                    android:textColorHint="#D3503088"
+                    android:textColor="#D3503088"
+                    android:text="India">
+
+                </com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayout4"
+                android:layout_width="match_parent"
+                android:textColorHint="#D3503088"
+                android:textColor="#D3503088"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Address Line"
+                    android:textColorHint="#D3503088"
+                    android:textColor="#D3503088"
+                    android:id="@+id/sk_add"
+                    android:inputType="textPostalAddress">
+
+                </com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayout6"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:textColorHint="#D3503088"
+                android:textColor="#D3503088"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="City or District"
+                    android:textColorHint="#D3503088"
+                    android:textColor="#D3503088"
+                    android:id="@+id/sk_dist">
+
+                </com.google.android.material.textfield.TextInputEditText>
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputLayout7"
+                    android:layout_width="wrap_content"
+                    android:textColorHint="#D3503088"
+                    android:textColor="#D3503088"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/sk_state"
+                        android:textColorHint="#D3503088"
+                        android:textColor="#D3503088"
+                        android:hint="State"></com.google.android.material.textfield.TextInputEditText>
+
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputLayout9"
+                    android:layout_width="wrap_content"
+                    android:textColorHint="#D3503088"
+                    android:textColor="#D3503088"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/sk_zip"
+                        android:textColorHint="#D3503088"
+                        android:textColor="#D3503088"
+                        android:inputType="number"
+                        android:hint="Pin Code">
+
+
+                    </com.google.android.material.textfield.TextInputEditText>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#D3503088"
+                android:textColor="#D59C27B0"
+                android:layout_marginTop="10dp"
+                android:text="What requirements your shop meets?"
+                android:textSize="15sp">
+
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:textColorHint="#D3503088"
+                    android:textColor="#D3503088"
+                    android:id="@+id/sk_market"
+                    android:text="Supermarket">
+
+                </CheckBox>
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="#D3503088"
+                    android:textColor="#D3503088"
+                    android:id="@+id/sk_medicals"
+                    android:layout_marginStart="50dp"
+                    android:text="Medicals">
+
+                </CheckBox>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:textColorHint="#D3503088"
+                android:textColor="#D3503088"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:textColorHint="#D3503088"
+                    android:textColor="#D3503088"
+                    android:id="@+id/sk_dairy"
+                    android:text="Dairy">
+
+                </CheckBox>
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="100dp"
+                    android:textColorHint="#D3503088"
+                    android:textColor="#D3503088"
+                    android:id="@+id/sk_store"
+                    android:text="Fruits and vegetables">
+
+                </CheckBox>
+            </LinearLayout>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="join"
+                android:text="Join"
+                android:backgroundTint="#81673AB7"
+                android:layout_marginStart="145dp"
+                android:layout_marginTop="10dp">
+
+            </Button>
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+
+
+
+</LinearLayout>
