@@ -33,6 +33,25 @@ On packing the order, the customer will be notified and will collect the items.
 * Libraries: recyclerview,material design
 * Third-party Libraries: Glide,one signal
 
+## Screenshots
+Main Page
+
+<img src="Screenshots/Main%20Page.jpeg" width="200">
+
+Shopkeeper's Screens
+
+<img src="Screenshots/Shopkeepers%20home.jpeg" width="200"> <img src="Screenshots/Shopkeeper%20adding%20item.jpeg" width="200"> <img src="Screenshots/Orders%20list.jpeg" width="200"> <img src="Screenshots/Order%20on%20Shopkeeper's%20account.jpeg" width="200">
+
+Customer's Screens
+
+<img src="Screenshots/Customer%20Home.jpeg" width="220"> <img src="Screenshots/Items%20in%20each%20shop%20on%20customers%20account.jpeg" width="220"> <img src="Screenshots/Customer%20adding%20to%20Cart.jpeg" width="220"><img src="Screenshots/Once%20packed%20customer's%20cart.jpeg" width="220"> <img src="Screenshots/Customer%20cart%20before%20confirming%20the%20order.jpeg" width="220"> 
+
+Notifications
+
+<img src="Screenshots/Notification%20of%20Order.jpeg" height="200"><img src="Screenshots/Notification%20of%20Order%20Packed.jpeg" height="200"><img src="Screenshots/Notification%20of%20Order%20Recieved.jpeg" height="200">
+
+
+
 ## Conclusion
 This can solve the problem of people waiting in ques in front of the shops to buy their necessities and
 can help avoiding the crowd in front of the shops, helping in maintaining social distance.
