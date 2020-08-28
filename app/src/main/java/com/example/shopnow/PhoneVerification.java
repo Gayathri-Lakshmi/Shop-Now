@@ -153,7 +153,7 @@ public class PhoneVerification extends AppCompatActivity {
             }
             else {
                 Intent i =new Intent ( PhoneVerification.this,LogoPage.class );
-                i.putExtra ( "type","c" );
+                i.putExtra ( "type","sk" );
                 i.putExtra ( "Phone",phNo );
                 startActivity ( i );
 
